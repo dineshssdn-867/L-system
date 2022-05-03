@@ -27,7 +27,7 @@ rotation_angle = st.text_input("Enter the rotation angle: ")
 
 plot_l_system = st.button('Plot L-System')
 
-if plot_l_system:
+if plot_l_system and rotation_angle and iterations and pattern_r and pattern_l:
     plot_coords(turtle_to_coords(transform_multiple('L', {
         'L': pattern_l,
         'R': pattern_r
